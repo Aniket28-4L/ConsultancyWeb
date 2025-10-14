@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800" height="600" viewBox="0 0 800 600">
+  <title>Humboldt University of Berlin</title>
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- Main Building (Hauptgebäude) -->
+  <g>
+    <!-- Main Structure -->
+    <rect x="150" y="150" width="500" height="250" fill="#e8d8c0" stroke="#333" stroke-width="2"/>
+    
+    <!-- Roof -->
+    <rect x="140" y="130" width="520" height="20" fill="#d0c0a0" stroke="#333" stroke-width="1"/>
+    
+    <!-- Central Portico with Columns -->
+    <g>
+      <!-- Base -->
+      <rect x="300" y="350" width="200" height="10" fill="#d0c0a0" stroke="#333" stroke-width="1"/>
+      <rect x="290" y="360" width="220" height="10" fill="#d0c0a0" stroke="#333" stroke-width="1"/>
+      <rect x="280" y="370" width="240" height="30" fill="#d0c0a0" stroke="#333" stroke-width="1"/>
+      
+      <!-- Steps -->
+      <rect x="300" y="400" width="200" height="10" fill="#d0c0a0" stroke="#333" stroke-width="1"/>
+      <rect x="310" y="410" width="180" height="10" fill="#d0c0a0" stroke="#333" stroke-width="1"/>
+      <rect x="320" y="420" width="160" height="10" fill="#d0c0a0" stroke="#333" stroke-width="1"/>
+      
+      <!-- Columns -->
+      <rect x="310" y="200" width="20" height="150" fill="#f0e8d8" stroke="#333" stroke-width="1"/>
+      <rect x="350" y="200" width="20" height="150" fill="#f0e8d8" stroke="#333" stroke-width="1"/>
+      <rect x="390" y="200" width="20" height="150" fill="#f0e8d8" stroke="#333" stroke-width="1"/>
+      <rect x="430" y="200" width="20" height="150" fill="#f0e8d8" stroke="#333" stroke-width="1"/>
+      <rect x="470" y="200" width="20" height="150" fill="#f0e8d8" stroke="#333" stroke-width="1"/>
+      
+      <!-- Column Capitals -->
+      <rect x="305" y="180" width="30" height="20" fill="#f0e8d8" stroke="#333" stroke-width="1"/>
+      <rect x="345" y="180" width="30" height="20" fill="#f0e8d8" stroke="#333" stroke-width="1"/>
+      <rect x="385" y="180" width="30" height="20" fill="#f0e8d8" stroke="#333" stroke-width="1"/>
+      <rect x="425" y="180" width="30" height="20" fill="#f0e8d8" stroke="#333" stroke-width="1"/>
+      <rect x="465" y="180" width="30" height="20" fill="#f0e8d8" stroke="#333" stroke-width="1"/>
+      
+      <!-- Column Bases -->
+      <rect x="305" y="350" width="30" height="10" fill="#f0e8d8" stroke="#333" stroke-width="1"/>
+      <rect x="345" y="350" width="30" height="10" fill="#f0e8d8" stroke="#333" stroke-width="1"/>
+      <rect x="385" y="350" width="30" height="10" fill="#f0e8d8" stroke="#333" stroke-width="1"/>
+      <rect x="425" y="350" width="30" height="10" fill="#f0e8d8" stroke="#333" stroke-width="1"/>
+      <rect x="465" y="350" width="30" height="10" fill="#f0e8d8" stroke="#333" stroke-width="1"/>
+      
+      <!-- Pediment (Triangular section above columns) -->
+      <path d="M300,180 L400,150 L500,180 Z" fill="#f0e8d8" stroke="#333" stroke-width="1"/>
+      <text x="400" y="170" font-family="serif" font-size="8" text-anchor="middle" fill="#333">UNIVERSITAS HUMBOLDTIANA BEROLINENSIS</text>
+    </g>
+    
+    <!-- Windows - Left Wing -->
+    <g>
+      <!-- First Row -->
+      <rect x="180" y="180" width="30" height="50" fill="#d1e0ff" stroke="#333" stroke-width="1"/>
+      <rect x="230" y="180" width="30" height="50" fill="#d1e0ff" stroke="#333" stroke-width="1"/>
+      
+      <!-- Second Row -->
+      <rect x="180" y="250" width="30" height="50" fill="#d1e0ff" stroke="#333" stroke-width="1"/>
+      <rect x="230" y="250" width="30" height="50" fill="#d1e0ff" stroke="#333" stroke-width="1"/>
+      
+      <!-- Third Row -->
+      <rect x="180" y="320" width="30" height="50" fill="#d1e0ff" stroke="#333" stroke-width="1"/>
+      <rect x="230" y="320" width="30" height="50" fill="#d1e0ff" stroke="#333" stroke-width="1"/>
+    </g>
+    
+    <!-- Windows - Right Wing -->
+    <g>
+      <!-- First Row -->
+      <rect x="540" y="180" width="30" height="50" fill="#d1e0ff" stroke="#333" stroke-width="1"/>
+      <rect x="590" y="180" width="30" height="50" fill="#d1e0ff" stroke="#333" stroke-width="1"/>
+      
+      <!-- Second Row -->
+      <rect x="540" y="250" width="30" height="50" fill="#d1e0ff" stroke="#333" stroke-width="1"/>
+      <rect x="590" y="250" width="30" height="50" fill="#d1e0ff" stroke="#333" stroke-width="1"/>
+      
+      <!-- Third Row -->
+      <rect x="540" y="320" width="30" height="50" fill="#d1e0ff" stroke="#333" stroke-width="1"/>
+      <rect x="590" y="320" width="30" height="50" fill="#d1e0ff" stroke="#333" stroke-width="1"/>
+    </g>
+    
+    <!-- Main Door -->
+    <rect x="380" y="320" width="40" height="80" fill="#8b4513" stroke="#333" stroke-width="1"/>
+    <ellipse cx="400" cy="320" rx="20" ry="10" fill="#8b4513" stroke="#333" stroke-width="1"/>
+    <circle cx="390" cy="360" r="3" fill="#d4af37" stroke="#333" stroke-width="0.5"/>
+  </g>
+  
+  <!-- Unter den Linden Boulevard -->
+  <rect x="0" y="430" width="800" height="40" fill="#a9a9a9" stroke="#333" stroke-width="1"/>
+  <line x1="0" y1="450" x2="800" y2="450" stroke="white" stroke-width="2" stroke-dasharray="10,10"/>
+  
+  <!-- Trees along Unter den Linden -->
+  <g>
+    <!-- Left Side Trees -->
+    <g transform="translate(100, 420)">
+      <circle cx="0" cy="0" r="20" fill="#228b22" stroke="#333" stroke-width="1"/>
+      <rect x="-5" y="0" width="10" height="30" fill="#8b4513" stroke="#333" stroke-width="1"/>
+    </g>
+    
+    <g transform="translate(200, 420)">
+      <circle cx="0" cy="0" r="20" fill="#228b22" stroke="#333" stroke-width="1"/>
+      <rect x="-5" y="0" width="10" height="30" fill="#8b4513" stroke="#333" stroke-width="1"/>
+    </g>
+    
+    <!-- Right Side Trees -->
+    <g transform="translate(600, 420)">
+      <circle cx="0" cy="0" r="20" fill="#228b22" stroke="#333" stroke-width="1"/>
+      <rect x="-5" y="0" width="10" height="30" fill="#8b4513" stroke="#333" stroke-width="1"/>
+    </g>
+    
+    <g transform="translate(700, 420)">
+      <circle cx="0" cy="0" r="20" fill="#228b22" stroke="#333" stroke-width="1"/>
+      <rect x="-5" y="0" width="10" height="30" fill="#8b4513" stroke="#333" stroke-width="1"/>
+    </g>
+  </g>
+  
+  <!-- Statue of Humboldt Brothers (Simplified) -->
+  <g transform="translate(400, 480)">
+    <rect x="-15" y="0" width="30" height="10" fill="#d0d0d0" stroke="#333" stroke-width="1"/>
+    <rect x="-20" y="10" width="40" height="10" fill="#d0d0d0" stroke="#333" stroke-width="1"/>
+    <rect x="-10" y="-30" width="20" height="30" fill="#d0d0d0" stroke="#333" stroke-width="1"/>
+    <circle cx="0" cy="-40" r="10" fill="#d0d0d0" stroke="#333" stroke-width="1"/>
+    <text x="0" y="30" font-family="serif" font-size="8" text-anchor="middle" fill="#333">Humboldt</text>
+  </g>
+  
+  <!-- Ground -->
+  <rect x="0" y="500" width="800" height="100" fill="#a9be7b" stroke="#333" stroke-width="1"/>
+  
+  <!-- Text -->
+  <text x="400" y="540" font-family="serif" font-size="24" text-anchor="middle" fill="#333">Humboldt University of Berlin</text>
+  <text x="400" y="570" font-family="sans-serif" font-size="16" text-anchor="middle" fill="#666">Free illustration of the historic main building</text>
+</svg>

@@ -1,0 +1,319 @@
+.study-abroad {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+}
+
+.study-abroad h1 {
+  font-size: 3.5rem;
+  color: #4F46E5;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  position: relative;
+  padding-bottom: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
+  font-weight: 800;
+}
+
+.study-abroad h1::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 6px;
+  background: #4F46E5;
+  border-radius: 3px;
+}
+
+.countries {
+  margin-bottom: 4rem;
+}
+
+.countries h2, .courses h2, .requirements h2, .scholarships h2 {
+  font-size: 2.5rem;
+  color: #6366F1;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  font-weight: 700;
+  border-bottom: 2px solid rgba(99, 102, 241, 0.15);
+  display: inline-block;
+}
+
+.countries h2::after, .courses h2::after, .requirements h2::after, .scholarships h2::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100px;
+  height: 3px;
+  background: #6366F1;
+  border-radius: 2px;
+}
+
+.country-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.country-card {
+  background: linear-gradient(to bottom right, #F9FAFB, #F3F4F6);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border-left: 4px solid #3B82F6;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.country-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.country-card h3 {
+  font-size: 1.75rem;
+  color: #4F46E5;
+  margin-bottom: 1.25rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+  font-weight: 700;
+  letter-spacing: -0.25px;
+}
+
+.country-card h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(to right, #3B82F6, #60A5FA);
+  border-radius: 2px;
+  box-shadow: 0 1px 2px rgba(59, 130, 246, 0.3);
+}
+
+.country-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.country-card li {
+  margin-bottom: 0.75rem;
+  color: #1F2937;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.country-card li:before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #3B82F6;
+  font-weight: bold;
+}
+
+.requirements, .scholarships {
+  margin-top: 4rem;
+  position: relative;
+}
+
+/* Section headings are now handled by the common selector above */
+
+.requirements ul {
+  list-style: none;
+  padding: 0;
+}
+
+.requirements li {
+  background: linear-gradient(to right, #F9FAFB, #F3F4F6);
+  padding: 1.5rem 1.5rem 1.5rem 2rem;
+  margin-bottom: 1.25rem;
+  border-radius: 8px;
+  color: #1F2937;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border-left: 4px solid #3B82F6;
+  position: relative;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.requirements li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+}
+
+.requirements li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #3B82F6;
+  font-weight: bold;
+  font-size: 1.25rem;
+  background-color: #FFFFFF;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.scholarship-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.scholarship-item {
+  background: linear-gradient(to right, #F9FAFB, #F3F4F6);
+  padding: 1.75rem;
+  margin-bottom: 1.25rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border-left: 4px solid #3B82F6;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.scholarship-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+}
+
+.scholarship-item h3 {
+  font-size: 1.5rem;
+  color: #1E3A8A;
+  margin-bottom: 1rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+  font-weight: 700;
+  letter-spacing: -0.25px;
+}
+
+.scholarship-item h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background: linear-gradient(to right, #3B82F6, #60A5FA);
+  border-radius: 2px;
+  box-shadow: 0 1px 2px rgba(59, 130, 246, 0.3);
+}
+
+.scholarship-item p {
+  color: #4B5563;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+/* Courses Section Styling */
+.courses {
+  margin-bottom: 4rem;
+}
+
+/* Courses h2 is now handled by the common selector above */
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.course-card {
+  background: linear-gradient(135deg, #F9FAFB, #F3F4F6);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-top: 4px solid #3B82F6;
+  position: relative;
+  overflow: hidden;
+}
+
+.course-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(135deg, transparent 50%, rgba(59, 130, 246, 0.1) 50%);
+  border-radius: 0 0 0 100px;
+  z-index: 0;
+}
+
+.course-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+.course-card h3 {
+  color: #1E3A8A;
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 1;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.25px;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid rgba(59, 130, 246, 0.15);
+}
+
+.course-card p {
+  color: #4B5563;
+  margin-bottom: 1.25rem;
+  font-size: 0.95rem;
+  position: relative;
+  z-index: 1;
+}
+
+.course-card ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.75rem;
+  position: relative;
+  z-index: 1;
+}
+
+.course-card li {
+  margin-bottom: 0.75rem;
+  color: #1F2937;
+  position: relative;
+  padding-left: 1.75rem;
+  font-size: 0.95rem;
+}
+
+.course-card li:before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #3B82F6;
+  font-weight: bold;
+}
+
+.course-btn {
+  background: linear-gradient(to right, #3B82F6, #2563EB);
+  color: white;
+  border: none;
+  padding: 0.85rem 1.75rem;
+  border-radius: 6px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 4px 6px rgba(37, 99, 235, 0.2);
+}
+
+.course-btn:hover {
+  background: linear-gradient(to right, #2563EB, #1E40AF);
+  box-shadow: 0 6px 12px rgba(37, 99, 235, 0.3);
+  transform: translateY(-2px);
+}

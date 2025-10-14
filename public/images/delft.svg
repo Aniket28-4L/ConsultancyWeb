@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f5f5f5"/>
+  
+  <!-- Sky -->
+  <rect width="800" height="200" fill="#b3d9ff"/>
+  
+  <!-- Main Building - Aula Conference Centre -->
+  <rect x="200" y="150" width="400" height="200" fill="#e0e0e0"/>
+  
+  <!-- Distinctive Roof -->
+  <polygon points="200,150 400,80 600,150" fill="#00a6d6"/>
+  
+  <!-- Windows -->
+  <rect x="230" y="180" width="30" height="50" fill="#87ceeb"/>
+  <rect x="280" y="180" width="30" height="50" fill="#87ceeb"/>
+  <rect x="330" y="180" width="30" height="50" fill="#87ceeb"/>
+  <rect x="380" y="180" width="30" height="50" fill="#87ceeb"/>
+  <rect x="430" y="180" width="30" height="50" fill="#87ceeb"/>
+  <rect x="480" y="180" width="30" height="50" fill="#87ceeb"/>
+  <rect x="530" y="180" width="30" height="50" fill="#87ceeb"/>
+  
+  <rect x="230" y="250" width="30" height="50" fill="#87ceeb"/>
+  <rect x="280" y="250" width="30" height="50" fill="#87ceeb"/>
+  <rect x="330" y="250" width="30" height="50" fill="#87ceeb"/>
+  <rect x="380" y="250" width="30" height="50" fill="#87ceeb"/>
+  <rect x="430" y="250" width="30" height="50" fill="#87ceeb"/>
+  <rect x="480" y="250" width="30" height="50" fill="#87ceeb"/>
+  <rect x="530" y="250" width="30" height="50" fill="#87ceeb"/>
+  
+  <!-- Door -->
+  <rect x="375" y="300" width="50" height="50" fill="#00a6d6"/>
+  
+  <!-- Modern Elements -->
+  <rect x="150" y="200" width="50" height="150" fill="#00a6d6"/>
+  <rect x="600" y="200" width="50" height="150" fill="#00a6d6"/>
+  
+  <!-- Water Feature (Delft is known for canals) -->
+  <rect width="800" height="30" y="400" fill="#4682b4"/>
+  <path d="M0,410 Q200,420 400,410 Q600,420 800,410" fill="#6495ed" stroke="white" stroke-width="1"/>
+  
+  <!-- Grass -->
+  <rect width="800" height="70" y="430" fill="#7caa7c"/>
+  
+  <!-- Text -->
+  <text x="400" y="470" font-family="serif" font-size="24" text-anchor="middle" fill="#333">Delft University of Technology</text>
+</svg>

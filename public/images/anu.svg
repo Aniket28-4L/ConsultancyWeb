@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800" height="600" viewBox="0 0 800 600">
+  <title>Australian National University</title>
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- University House (Heritage Building) -->
+  <g>
+    <!-- Main Structure -->
+    <rect x="200" y="150" width="400" height="180" fill="#e6d7b8" stroke="#333" stroke-width="2"/>
+    
+    <!-- Roof -->
+    <rect x="190" y="130" width="420" height="20" fill="#a9a9a9" stroke="#333" stroke-width="1"/>
+    
+    <!-- Windows - Top Row -->
+    <rect x="230" y="170" width="30" height="40" fill="#d1e0ff" stroke="#333" stroke-width="1"/>
+    <rect x="280" y="170" width="30" height="40" fill="#d1e0ff" stroke="#333" stroke-width="1"/>
+    <rect x="330" y="170" width="30" height="40" fill="#d1e0ff" stroke="#333" stroke-width="1"/>
+    <rect x="440" y="170" width="30" height="40" fill="#d1e0ff" stroke="#333" stroke-width="1"/>
+    <rect x="490" y="170" width="30" height="40" fill="#d1e0ff" stroke="#333" stroke-width="1"/>
+    <rect x="540" y="170" width="30" height="40" fill="#d1e0ff" stroke="#333" stroke-width="1"/>
+    
+    <!-- Windows - Bottom Row -->
+    <rect x="230" y="230" width="30" height="40" fill="#d1e0ff" stroke="#333" stroke-width="1"/>
+    <rect x="280" y="230" width="30" height="40" fill="#d1e0ff" stroke="#333" stroke-width="1"/>
+    <rect x="330" y="230" width="30" height="40" fill="#d1e0ff" stroke="#333" stroke-width="1"/>
+    <rect x="440" y="230" width="30" height="40" fill="#d1e0ff" stroke="#333" stroke-width="1"/>
+    <rect x="490" y="230" width="30" height="40" fill="#d1e0ff" stroke="#333" stroke-width="1"/>
+    <rect x="540" y="230" width="30" height="40" fill="#d1e0ff" stroke="#333" stroke-width="1"/>
+    
+    <!-- Main Door -->
+    <rect x="380" y="230" width="40" height="100" fill="#8b4513" stroke="#333" stroke-width="1"/>
+    <path d="M380,230 Q400,210 420,230" fill="none" stroke="#333" stroke-width="1"/>
+    <circle cx="390" cy="280" r="3" fill="#d4af37" stroke="#333" stroke-width="0.5"/>
+    
+    <!-- Steps -->
+    <rect x="360" y="330" width="80" height="10" fill="#d3d3d3" stroke="#333" stroke-width="0.5"/>
+    <rect x="350" y="340" width="100" height="10" fill="#d3d3d3" stroke="#333" stroke-width="0.5"/>
+  </g>
+  
+  <!-- Chifley Library (Modern Building) -->
+  <g transform="translate(600, 250)">
+    <rect x="0" y="0" width="120" height="150" fill="#f0f0f0" stroke="#333" stroke-width="1"/>
+    <rect x="10" y="20" width="100" height="120" fill="#d1e0ff" stroke="#333" stroke-width="1"/>
+    <line x1="10" y1="50" x2="110" y2="50" stroke="#333" stroke-width="0.5"/>
+    <line x1="10" y1="80" x2="110" y2="80" stroke="#333" stroke-width="0.5"/>
+    <line x1="10" y1="110" x2="110" y2="110" stroke="#333" stroke-width="0.5"/>
+    <line x1="60" y1="20" x2="60" y2="140" stroke="#333" stroke-width="0.5"/>
+    <text x="60" y="-10" font-family="sans-serif" font-size="10" text-anchor="middle" fill="#333">Library</text>
+  </g>
+  
+  <!-- Tjabal Indigenous Higher Education Centre (Stylized) -->
+  <g transform="translate(100, 250)">
+    <path d="M0,0 L120,0 L100,40 L20,40 Z" fill="#cd853f" stroke="#333" stroke-width="1"/>
+    <rect x="20" y="40" width="80" height="80" fill="#cd853f" stroke="#333" stroke-width="1"/>
+    <rect x="40" y="60" width="40" height="60" fill="#8b4513" stroke="#333" stroke-width="1"/>
+    <path d="M40,60 Q60,40 80,60" fill="none" stroke="#333" stroke-width="1"/>
+    <text x="60" y="-10" font-family="sans-serif" font-size="10" text-anchor="middle" fill="#333">Indigenous Centre</text>
+  </g>
+  
+  <!-- Lake Burley Griffin -->
+  <path d="M0,450 Q200,430 400,450 Q600,470 800,450 L800,500 L0,500 Z" fill="#add8e6" stroke="#333" stroke-width="1"/>
+  
+  <!-- Lawns and Pathways -->
+  <g>
+    <!-- Main Lawn -->
+    <rect x="150" y="350" width="500" height="100" fill="#90ee90" stroke="#333" stroke-width="1"/>
+    
+    <!-- Pathways -->
+    <path d="M400,330 L400,450" stroke="#d3d3d3" stroke-width="10" fill="none"/>
+    <path d="M200,400 L600,400" stroke="#d3d3d3" stroke-width="10" fill="none"/>
+    <circle cx="400" cy="400" r="15" fill="#d3d3d3" stroke="#333" stroke-width="0.5"/>
+  </g>
+  
+  <!-- Eucalyptus Trees (Iconic Australian Trees) -->
+  <g>
+    <g transform="translate(150, 380)">
+      <rect x="-5" y="0" width="10" height="40" fill="#8b4513" stroke="#333" stroke-width="1"/>
+      <path d="M0,-40 C-20,-30 -25,-10 -15,0 C-25,-5 -20,-25 -5,-15 C-10,-5 0,0 0,0 C0,0 10,-5 5,-15 C20,-25 25,-5 15,0 C25,-10 20,-30 0,-40" fill="#556b2f" stroke="#333" stroke-width="1"/>
+    </g>
+    
+    <g transform="translate(650, 380)">
+      <rect x="-5" y="0" width="10" height="40" fill="#8b4513" stroke="#333" stroke-width="1"/>
+      <path d="M0,-40 C-20,-30 -25,-10 -15,0 C-25,-5 -20,-25 -5,-15 C-10,-5 0,0 0,0 C0,0 10,-5 5,-15 C20,-25 25,-5 15,0 C25,-10 20,-30 0,-40" fill="#556b2f" stroke="#333" stroke-width="1"/>
+    </g>
+  </g>
+  
+  <!-- University Crest (Simplified) -->
+  <g transform="translate(400, 100) scale(0.5)">
+    <rect x="-30" y="-30" width="60" height="60" fill="#003366" stroke="#d4af37" stroke-width="2"/>
+    <text x="0" y="5" font-family="serif" font-weight="bold" font-size="12" text-anchor="middle" fill="#d4af37">ANU</text>
+    <text x="0" y="20" font-family="serif" font-weight="bold" font-size="8" text-anchor="middle" fill="#d4af37">1946</text>
+  </g>
+  
+  <!-- Mount Ainslie in Background (Canberra Landmark) -->
+  <path d="M0,150 Q200,50 400,100 Q600,50 800,150" fill="none" stroke="#a9a9a9" stroke-width="1" stroke-dasharray="5,5"/>
+  
+  <!-- Text -->
+  <text x="400" y="540" font-family="serif" font-size="24" text-anchor="middle" fill="#333">Australian National University</text>
+  <text x="400" y="570" font-family="sans-serif" font-size="16" text-anchor="middle" fill="#666">Free illustration of the ANU campus in Canberra</text>
+</svg>

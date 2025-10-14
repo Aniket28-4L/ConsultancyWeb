@@ -1,0 +1,137 @@
+.documentation {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f3f4f6; /* light gray background to make white cards visible */
+}
+
+.documentation-intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 3rem auto;
+}
+
+.documentation-intro p {
+  color: #4B5563;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.documentation h1 {
+  font-family: 'Inter', sans-serif;
+  font-size: 3.5rem;
+  color: #1E3A8A;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  position: relative;
+  padding-bottom: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
+  font-weight: 800;
+}
+
+.documentation h1::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 6px;
+  background: linear-gradient(90deg, #1E40AF, #3B82F6, #60A5FA);
+  border-radius: 3px;
+  box-shadow: 0 2px 4px rgba(59, 130, 246, 0.3);
+}
+
+.document-types {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.doc-section {
+  background-color: transparent; /* no background, so only white cards are visible */
+  border-radius: 10px;
+  padding: 1.5rem;
+}
+
+.doc-category {
+  background-color: #ffffff; /* white box */
+  color: #000000; /* black text */
+  padding: 2rem;
+  border-radius: 12px;
+  transition: transform 0.3s;
+  border-left: 4px solid #3B82F6;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+}
+
+.doc-category:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+.doc-category h2 {
+  font-family: 'Inter', sans-serif;
+  font-size: 2rem;
+  color: #000000; /* black heading */
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 0.75rem;
+  font-weight: 700;
+  border-bottom: 2px solid rgba(59, 130, 246, 0.15);
+  display: inline-block;
+}
+
+.doc-category h2::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(to right, #3B82F6, #60A5FA);
+  border-radius: 2px;
+  box-shadow: 0 1px 2px rgba(59, 130, 246, 0.3);
+}
+
+.doc-category ul {
+  list-style: none;
+  padding: 0;
+}
+.doc-category li {
+  display: flex;               /* align icon + text */
+  align-items: center;         /* vertically center */
+  gap: 0.5rem;                 /* spacing between checkmark and text */
+  margin-bottom: 0.75rem;
+  color: #000000;
+  font-size: 1.05rem;
+  line-height: 1.5;
+  transition: transform 0.2s;
+  position: relative;
+  padding-left: 0;             /* remove old padding */
+}
+
+
+.doc-category li:hover {
+  transform: translateX(5px);
+  color: #000000;
+}
+.doc-category li::before {
+  content: "✓";
+  color: #3B82F6;
+  font-weight: bold;
+  background-color: #ffffff;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;               /* center checkmark */
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 0.9rem;
+  flex-shrink: 0;              /* prevent shrinking */
+  position: relative;          /* no absolute positioning */
+}

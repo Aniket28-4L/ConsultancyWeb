@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800" height="600" viewBox="0 0 800 600">
+  <title>University of Cambridge</title>
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- Main Building (King's College Chapel) -->
+  <g>
+    <!-- Chapel Body -->
+    <rect x="200" y="200" width="400" height="200" fill="#e8e8e8" stroke="#333" stroke-width="2"/>
+    
+    <!-- Roof -->
+    <polygon points="200,200 400,120 600,200" fill="#d0d0d0" stroke="#333" stroke-width="2"/>
+    
+    <!-- Towers -->
+    <g>
+      <!-- Left Tower -->
+      <rect x="200" y="150" width="50" height="50" fill="#e0e0e0" stroke="#333" stroke-width="1"/>
+      <polygon points="200,150 225,120 250,150" fill="#d0d0d0" stroke="#333" stroke-width="1"/>
+      
+      <!-- Right Tower -->
+      <rect x="550" y="150" width="50" height="50" fill="#e0e0e0" stroke="#333" stroke-width="1"/>
+      <polygon points="550,150 575,120 600,150" fill="#d0d0d0" stroke="#333" stroke-width="1"/>
+      
+      <!-- Center Spires -->
+      <rect x="300" y="120" width="20" height="80" fill="#e0e0e0" stroke="#333" stroke-width="1"/>
+      <polygon points="300,120 310,90 320,120" fill="#d0d0d0" stroke="#333" stroke-width="1"/>
+      
+      <rect x="350" y="120" width="20" height="80" fill="#e0e0e0" stroke="#333" stroke-width="1"/>
+      <polygon points="350,120 360,90 370,120" fill="#d0d0d0" stroke="#333" stroke-width="1"/>
+      
+      <rect x="400" y="120" width="20" height="80" fill="#e0e0e0" stroke="#333" stroke-width="1"/>
+      <polygon points="400,120 410,90 420,120" fill="#d0d0d0" stroke="#333" stroke-width="1"/>
+      
+      <rect x="450" y="120" width="20" height="80" fill="#e0e0e0" stroke="#333" stroke-width="1"/>
+      <polygon points="450,120 460,90 470,120" fill="#d0d0d0" stroke="#333" stroke-width="1"/>
+    </g>
+    
+    <!-- Windows -->
+    <g>
+      <!-- Gothic Windows -->
+      <g>
+        <rect x="230" y="230" width="30" height="80" fill="#d1e0ff" stroke="#333" stroke-width="1"/>
+        <path d="M230,230 Q245,210 260,230" fill="none" stroke="#333" stroke-width="1"/>
+        
+        <rect x="290" y="230" width="30" height="80" fill="#d1e0ff" stroke="#333" stroke-width="1"/>
+        <path d="M290,230 Q305,210 320,230" fill="none" stroke="#333" stroke-width="1"/>
+        
+        <rect x="350" y="230" width="30" height="80" fill="#d1e0ff" stroke="#333" stroke-width="1"/>
+        <path d="M350,230 Q365,210 380,230" fill="none" stroke="#333" stroke-width="1"/>
+        
+        <rect x="410" y="230" width="30" height="80" fill="#d1e0ff" stroke="#333" stroke-width="1"/>
+        <path d="M410,230 Q425,210 440,230" fill="none" stroke="#333" stroke-width="1"/>
+        
+        <rect x="470" y="230" width="30" height="80" fill="#d1e0ff" stroke="#333" stroke-width="1"/>
+        <path d="M470,230 Q485,210 500,230" fill="none" stroke="#333" stroke-width="1"/>
+        
+        <rect x="530" y="230" width="30" height="80" fill="#d1e0ff" stroke="#333" stroke-width="1"/>
+        <path d="M530,230 Q545,210 560,230" fill="none" stroke="#333" stroke-width="1"/>
+      </g>
+    </g>
+    
+    <!-- Door -->
+    <rect x="380" y="320" width="40" height="80" fill="#8b4513" stroke="#333" stroke-width="1"/>
+    <path d="M380,320 Q400,300 420,320" fill="none" stroke="#333" stroke-width="1"/>
+  </g>
+  
+  <!-- River Cam -->
+  <path d="M100,450 C200,430 300,470 400,450 C500,430 600,470 700,450" fill="#a4c2f4" stroke="#333" stroke-width="1"/>
+  
+  <!-- Punting Boat -->
+  <g>
+    <rect x="350" y="440" width="80" height="20" rx="5" fill="#8b4513" stroke="#333" stroke-width="1"/>
+    <line x1="420" y1="430" x2="450" y2="450" stroke="#8b4513" stroke-width="2"/>
+    <circle cx="380" cy="450" r="3" fill="#333"/>
+  </g>
+  
+  <!-- Trees and Greenery -->
+  <g>
+    <circle cx="150" cy="350" r="30" fill="#6b8e23" stroke="#333" stroke-width="1"/>
+    <rect x="145" y="380" width="10" height="30" fill="#8b4513" stroke="#333" stroke-width="1"/>
+    
+    <circle cx="650" cy="350" r="30" fill="#6b8e23" stroke="#333" stroke-width="1"/>
+    <rect x="645" y="380" width="10" height="30" fill="#8b4513" stroke="#333" stroke-width="1"/>
+  </g>
+  
+  <!-- Ground -->
+  <rect x="100" y="480" width="600" height="5" fill="#8b4513" stroke="#333" stroke-width="1"/>
+  
+  <!-- Text -->
+  <text x="400" y="530" font-family="serif" font-size="24" text-anchor="middle" fill="#333">University of Cambridge</text>
+  <text x="400" y="560" font-family="serif" font-size="16" text-anchor="middle" fill="#666">Free illustration of King's College Chapel</text>
+</svg>

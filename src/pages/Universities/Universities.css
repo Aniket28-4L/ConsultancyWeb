@@ -1,0 +1,234 @@
+.universities-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.universities-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.universities-header h1 {
+  font-size: 3.5rem;
+  color: #1E3A8A;
+  text-align: center;
+  margin-bottom: 2rem;
+  position: relative;
+  padding-bottom: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
+  font-weight: 800;
+}
+
+.universities-header h1::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 6px;
+  background: linear-gradient(90deg, #1E40AF, #3B82F6, #60A5FA);
+  border-radius: 3px;
+  box-shadow: 0 2px 4px rgba(59, 130, 246, 0.3);
+}
+
+.universities-header p {
+  color: #4B5563;
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.filter-container {
+  margin-bottom: 2rem;
+  background-color: #FFFFFF;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-left: 4px solid #3B82F6;
+}
+
+.filter-container h3 {
+  font-size: 1.75rem;
+  color: #1E3A8A;
+  margin-bottom: 1.25rem;
+  position: relative;
+  padding-bottom: 0.75rem;
+  font-weight: 700;
+  letter-spacing: -0.25px;
+  border-bottom: 2px solid rgba(59, 130, 246, 0.15);
+  display: inline-block;
+}
+
+.filter-container h3::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 60%;
+  height: 2px;
+  background: linear-gradient(to right, #3B82F6, #60A5FA);
+  border-radius: 2px;
+  box-shadow: 0 1px 2px rgba(59, 130, 246, 0.3);
+}
+
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.filter-buttons button {
+  padding: 0.75rem 1.5rem;
+  background-color: #FFFFFF;
+  border: 1px solid #E5E7EB;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #4B5563;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-buttons button:hover {
+  background-color: #F9FAFB;
+  border-color: #D1D5DB;
+}
+
+.filter-buttons button.active {
+  background-color: #3B82F6;
+  color: white;
+  border-color: #3B82F6;
+}
+
+.universities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.university-card {
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(59, 130, 246, 0.1);
+}
+
+.university-image {
+  height: 200px;
+  overflow: hidden;
+}
+
+.university-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.university-card:hover .university-image img {
+  transform: scale(1.05);
+}
+
+.university-content {
+  padding: 1.5rem;
+}
+
+.university-content h3 {
+  font-family: 'Inter', sans-serif;
+  color: #1E3A8A;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.university-country {
+  color: #2D3748;
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  display: inline-block;
+  padding: 0.35rem 0.75rem;
+  background-color: #EBF4FF;
+  border-radius: 4px;
+  border-left: 3px solid #3B82F6;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease;
+}
+
+.university-description {
+  color: #374151;
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+  font-size: 0.95rem;
+  text-align: justify;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  font-family: 'Inter', sans-serif;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
+
+.university-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.feature {
+  display: inline-block;
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.feature.scholarship {
+  background-color: rgba(59, 130, 246, 0.1);
+  color: #2563EB;
+  border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+.feature.scholarship:hover {
+  background-color: rgba(59, 130, 246, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(37, 99, 235, 0.1);
+}
+
+.feature.visa {
+  background-color: rgba(16, 185, 129, 0.1);
+  color: #059669;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.feature.manual-visa {
+  background-color: rgba(245, 158, 11, 0.1);
+  color: #D97706;
+  border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .universities-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .filter-buttons {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .filter-buttons button {
+    width: 100%;
+  }
+}

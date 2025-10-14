@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f5f5f5"/>
+  
+  <!-- Sky -->
+  <rect width="800" height="200" fill="#b3d9ff"/>
+  
+  <!-- Main Building - Aula Medica -->
+  <polygon points="200,200 600,200 550,400 250,400" fill="#e6e6fa"/>
+  
+  <!-- Modern Architectural Elements -->
+  <polygon points="200,200 250,150 550,150 600,200" fill="#4682b4"/>
+  <polygon points="250,150 300,100 500,100 550,150" fill="#4169e1"/>
+  
+  <!-- Windows - Vertical Strips -->
+  <rect x="250" y="220" width="10" height="160" fill="#87ceeb"/>
+  <rect x="280" y="220" width="10" height="160" fill="#87ceeb"/>
+  <rect x="310" y="220" width="10" height="160" fill="#87ceeb"/>
+  <rect x="340" y="220" width="10" height="160" fill="#87ceeb"/>
+  <rect x="370" y="220" width="10" height="160" fill="#87ceeb"/>
+  <rect x="400" y="220" width="10" height="160" fill="#87ceeb"/>
+  <rect x="430" y="220" width="10" height="160" fill="#87ceeb"/>
+  <rect x="460" y="220" width="10" height="160" fill="#87ceeb"/>
+  <rect x="490" y="220" width="10" height="160" fill="#87ceeb"/>
+  <rect x="520" y="220" width="10" height="160" fill="#87ceeb"/>
+  
+  <!-- Entrance -->
+  <rect x="375" y="350" width="50" height="50" fill="#4682b4"/>
+  
+  <!-- Reflection in Water -->
+  <polygon points="250,400 550,400 500,450 300,450" fill="#b0c4de" opacity="0.5"/>
+  
+  <!-- Water -->
+  <rect width="800" height="50" y="400" fill="#4682b4"/>
+  
+  <!-- Grass -->
+  <rect width="800" height="50" y="450" fill="#7caa7c"/>
+  
+  <!-- Text -->
+  <text x="400" y="480" font-family="serif" font-size="24" text-anchor="middle" fill="#333">Karolinska Institute</text>
+</svg>
