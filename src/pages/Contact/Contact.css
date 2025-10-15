@@ -456,32 +456,6 @@
   left: 8px;
 }
 
-.map-address {
-  position: absolute;
-  bottom: 30px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: white;
-  padding: 15px 20px;
-  border-radius: 8px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  min-width: 250px;
-  border-left: 4px solid #0056b3;
-}
-
-.map-address p {
-  margin: 5px 0;
-  color: #333;
-  font-size: 0.95rem;
-  line-height: 1.4;
-}
-
-.map-address p:first-child {
-  font-weight: 600;
-  color: #0056b3;
-}
-
 @keyframes bounce {
   0%, 100% {
     transform: rotate(-45deg) translate(0, 0);

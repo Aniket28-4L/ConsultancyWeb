@@ -84,9 +84,7 @@ const Contact = () => {
                 </div>
                 <div className="method-details">
                   <h3>Visit Us</h3>
-                  <p>123 Jamnagar Main Road</p>
-                  <p>Jamnagar, Gujarat 361001</p>
-                  <p>India</p>
+                  <p>123 Global Street, City, Country</p>
                 </div>
               </div>
               
