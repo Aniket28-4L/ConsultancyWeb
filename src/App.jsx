@@ -8,6 +8,7 @@ import Process from './pages/Process/Process'
 import Documentation from './pages/Documentation/Documentation'
 import Contact from './pages/Contact/Contact'
 import Universities from './pages/Universities/Universities'
+import AdminRoutes from './admin/AdminRoutes'
 import './index.css'
 import './App.css'
 import './pages/Home/Home.css'
@@ -15,6 +16,8 @@ import './pages/StudyAbroad/StudyAbroad.css'
 import './pages/WorkAbroad/WorkAbroad.css'
 import './pages/Contact/Contact.css'
 import './pages/Universities/Universities.css'
+import './admin/styles/AdminLayout.css'
+import './admin/styles/ManagePage.css'
 
 function App() {
   return (
@@ -44,6 +47,8 @@ function App() {
             <Route path="/documentation" element={<Documentation />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/universities" element={<Universities />} />
+            {/* Admin Routes */}
+            <Route path="/admin/*" element={<AdminRoutes />} />
           </Routes>
         </main>
         <Footer />

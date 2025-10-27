@@ -29,6 +29,10 @@ app.use('/api/universities', require('./routes/universityRoutes'));
 app.use('/api/countries', require('./routes/countryRoutes'));
 app.use('/api/testimonials', require('./routes/testimonialRoutes'));
 app.use('/api/users', require('./routes/userRoutes'));
+app.use('/api/admin', require('./routes/adminRoutes'));
+app.use('/api/processes', require('./routes/processRoutes'));
+app.use('/api/services', require('./routes/serviceRoutes'));
+app.use('/api/documentation-requirements', require('./routes/documentationRequirementRoutes'));
 
 // Root route
 app.get('/', (req, res) => {
