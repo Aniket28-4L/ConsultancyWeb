@@ -1,0 +1,165 @@
+.admin-manage-page {
+  width: 100%;
+}
+
+.admin-form-container {
+  margin-bottom: 2rem;
+}
+
+.admin-form-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.admin-button-small {
+  padding: 0.25rem 0.5rem;
+  margin-right: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.admin-flag-thumbnail {
+  width: 40px;
+  height: auto;
+  border-radius: 4px;
+}
+
+.admin-no-data {
+  text-align: center;
+  padding: 2rem;
+  color: #666;
+}
+
+.admin-form-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.admin-form-row .admin-form-group {
+  flex: 1;
+}
+
+.admin-pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.admin-pagination button {
+  padding: 0.5rem 1rem;
+  margin: 0 0.25rem;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.admin-pagination button.active {
+  background-color: #1a237e;
+  color: white;
+  border-color: #1a237e;
+}
+
+.admin-search-bar {
+  margin-bottom: 1.5rem;
+}
+
+.admin-search-bar input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.admin-filter-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.admin-filter-row select {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.admin-status-badge {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.admin-status-badge.pending {
+  background-color: #fff8e1;
+  color: #f57f17;
+}
+
+.admin-status-badge.completed {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.admin-status-badge.processing {
+  background-color: #e3f2fd;
+  color: #1565c0;
+}
+
+.admin-preview-image {
+  max-width: 100px;
+  max-height: 100px;
+  cursor: pointer;
+}
+
+.admin-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.admin-modal-content {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 90%;
+  max-height: 90%;
+  overflow: auto;
+}
+
+.admin-modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.admin-tabs {
+  display: flex;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 1.5rem;
+}
+
+.admin-tab {
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+}
+
+.admin-tab.active {
+  border-bottom-color: #1a237e;
+  color: #1a237e;
+  font-weight: 500;
+}
