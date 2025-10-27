@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import './styles/AdminLogin.css';
 
@@ -15,15 +14,22 @@ const AdminLogin = () => {
     setError('');
     setLoading(true);
 
-    try {
-      const { data } = await axios.post('/api/admin/login', { username, password });
-      localStorage.setItem('adminToken', data.token);
-      localStorage.setItem('adminInfo', JSON.stringify(data));
+    // Hardcoded admin credentials
+    if (username === 'admin' && password === 'admin123') {
+      // Create mock token and user data
+      const mockData = {
+        username: 'admin',
+        isAdmin: true,
+        token: 'mock-jwt-token-for-admin-authentication'
+      };
+      
+      localStorage.setItem('adminToken', mockData.token);
+      localStorage.setItem('adminInfo', JSON.stringify(mockData));
       setLoading(false);
       navigate('/admin/dashboard');
-    } catch (error) {
+    } else {
       setLoading(false);
-      setError(error.response?.data?.message || 'Invalid credentials');
+      setError('Invalid credentials. Use admin/admin123');
     }
   };
 
