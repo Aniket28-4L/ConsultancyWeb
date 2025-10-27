@@ -1,39 +1,25 @@
-const mongoose = require('mongoose');
+import mongoose from 'mongoose';
 
-const inquirySchema = mongoose.Schema(
-  {
-    name: {
-      type: String,
-      required: true,
-    },
-    email: {
-      type: String,
-      required: true,
-    },
-    phone: {
-      type: String,
-      required: true,
-    },
-    message: {
-      type: String,
-      required: true,
-    },
-    inquiryType: {
-      type: String,
-      enum: ['Study Abroad', 'Work Abroad', 'Documentation', 'General'],
-      required: true,
-    },
-    status: {
-      type: String,
-      enum: ['New', 'In Progress', 'Resolved'],
-      default: 'New',
-    }
+const inquirySchema = new mongoose.Schema({
+  fullName: { type: String, required: true },
+  email: { type: String, required: true },
+  countryCode: { type: String, required: true },
+  mobileNumber: { type: String, required: true },
+  pincode: { type: String },
+  message: { type: String },
+  inquiryType: {
+    type: String,
+    enum: ["Study Abroad", "Work Abroad", "Documentation", "General"],
+    default: "General",
   },
-  {
-    timestamps: true,
-  }
-);
+  status: {
+    type: String,
+    enum: ["New", "In Progress", "Resolved"],
+    default: "New",
+  },
+  createdAt: { type: Date, default: Date.now },
+}, {
+  timestamps: true,
+});
 
-const Inquiry = mongoose.model('Inquiry', inquirySchema);
-
-module.exports = Inquiry;
+export default mongoose.model('Inquiry', inquirySchema);

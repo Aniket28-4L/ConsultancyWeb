@@ -1,38 +1,16 @@
-const mongoose = require('mongoose');
+import mongoose from 'mongoose';
 
-const countrySchema = mongoose.Schema(
-  {
-    name: {
-      type: String,
-      required: true,
-      unique: true,
-    },
-    description: {
-      type: String,
-      required: true,
-    },
-    image: {
-      type: String,
-    },
-    studyInfo: {
-      type: String,
-    },
-    workInfo: {
-      type: String,
-    },
-    visaRequirements: {
-      type: String,
-    },
-    costOfLiving: {
-      type: String,
-    },
-    popularCities: [String],
-  },
-  {
-    timestamps: true,
-  }
-);
+const countrySchema = new mongoose.Schema({
+  name: { type: String, required: true },
+  description: { type: String, required: true },
+  image: { type: String, required: true },
+  studyInfo: { type: String, required: true },
+  workInfo: { type: String, required: true },
+  visaRequirements: { type: String, required: true },
+  costOfLiving: { type: String, required: true },
+  popularCities: [{ type: String }],
+}, {
+  timestamps: true,
+});
 
-const Country = mongoose.model('Country', countrySchema);
-
-module.exports = Country;
+export default mongoose.model('Country', countrySchema);

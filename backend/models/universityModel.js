@@ -1,47 +1,17 @@
-const mongoose = require('mongoose');
+import mongoose from 'mongoose';
 
-const universitySchema = mongoose.Schema(
-  {
-    name: {
-      type: String,
-      required: true,
-    },
-    country: {
-      type: mongoose.Schema.Types.ObjectId,
-      required: true,
-      ref: 'Country',
-    },
-    ranking: {
-      type: Number,
-    },
-    description: {
-      type: String,
-      required: true,
-    },
-    image: {
-      type: String,
-    },
-    website: {
-      type: String,
-    },
-    courses: [{
-      name: String,
-      duration: String,
-      fees: String,
-      description: String,
-    }],
-    admissionRequirements: {
-      type: String,
-    },
-    admissionDeadlines: {
-      type: String,
-    }
-  },
-  {
-    timestamps: true,
-  }
-);
+const universitySchema = new mongoose.Schema({
+  name: { type: String, required: true },
+  country: { type: mongoose.Schema.Types.ObjectId, ref: "Country", required: true },
+  ranking: { type: Number },
+  description: { type: String, required: true },
+  image: { type: String, required: true },
+  website: { type: String, required: true },
+  courses: [{ type: String }],
+  admissionRequirements: { type: String, required: true },
+  applicationDeadlines: { type: String, required: true },
+}, {
+  timestamps: true,
+});
 
-const University = mongoose.model('University', universitySchema);
-
-module.exports = University;
+export default mongoose.model('University', universitySchema);

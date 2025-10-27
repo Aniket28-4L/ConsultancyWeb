@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import axios from 'axios';
+import apiService from '../services/apiService';
 import './styles/Dashboard.css';
 
 const Dashboard = () => {
@@ -19,38 +19,36 @@ const Dashboard = () => {
   useEffect(() => {
     const fetchStats = async () => {
       try {
-        const token = localStorage.getItem('adminToken');
-        
-        // Fetch counts from different endpoints
+        // Fetch data from mock service
         const [
-          inquiriesRes,
-          usersRes,
-          universitiesRes,
-          testimonialsRes,
-          countriesRes,
-          servicesRes,
-          processesRes,
-          docsRes
+          inquiries,
+          users,
+          universities,
+          testimonials,
+          countries,
+          services,
+          processes,
+          documentations
         ] = await Promise.all([
-          axios.get('/api/inquiries', { headers: { Authorization: `Bearer ${token}` } }),
-          axios.get('/api/users', { headers: { Authorization: `Bearer ${token}` } }),
-          axios.get('/api/universities', { headers: { Authorization: `Bearer ${token}` } }),
-          axios.get('/api/testimonials', { headers: { Authorization: `Bearer ${token}` } }),
-          axios.get('/api/countries', { headers: { Authorization: `Bearer ${token}` } }),
-          axios.get('/api/services', { headers: { Authorization: `Bearer ${token}` } }),
-          axios.get('/api/processes', { headers: { Authorization: `Bearer ${token}` } }),
-          axios.get('/api/documentation-requirements', { headers: { Authorization: `Bearer ${token}` } })
+          apiService.getInquiries(),
+          apiService.getUsers(),
+          apiService.getUniversities(),
+          apiService.getTestimonials(),
+          apiService.getCountries(),
+          apiService.getServices(),
+          apiService.getProcesses(),
+          apiService.getDocumentations()
         ]);
 
         setStats({
-          inquiries: inquiriesRes.data.length,
-          users: usersRes.data.length,
-          universities: universitiesRes.data.length,
-          testimonials: testimonialsRes.data.length,
-          countries: countriesRes.data.length,
-          services: servicesRes.data.length,
-          processes: processesRes.data.length,
-          documentationRequirements: docsRes.data.length
+          inquiries: inquiries.length,
+          users: users.length,
+          universities: universities.length,
+          testimonials: testimonials.length,
+          countries: countries.length,
+          services: services.length,
+          processes: processes.length,
+          documentationRequirements: documentations.length
         });
         
         setLoading(false);
