@@ -1,5 +1,5 @@
-const jwt = require('jsonwebtoken');
-const bcrypt = require('bcryptjs');
+import jwt from 'jsonwebtoken';
+import bcrypt from 'bcryptjs';
 
 // @desc    Auth admin & get token
 // @route   POST /api/admin/login
@@ -43,4 +43,4 @@ const getAdminProfile = async (req, res) => {
   });
 };
 
-module.exports = { authAdmin, getAdminProfile };
+export { authAdmin, getAdminProfile };

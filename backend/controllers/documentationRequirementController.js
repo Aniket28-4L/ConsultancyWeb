@@ -1,4 +1,4 @@
-const DocumentationRequirement = require('../models/documentationRequirementModel');
+import DocumentationRequirement from '../models/DocumentationRequirement.js';
 
 // @desc    Get all documentation requirements
 // @route   GET /api/documentation-requirements
@@ -80,7 +80,7 @@ const deleteDocumentationRequirement = async (req, res) => {
   }
 };
 
-module.exports = {
+export{
   getDocumentationRequirements,
   getDocumentationRequirementById,
   createDocumentationRequirement,

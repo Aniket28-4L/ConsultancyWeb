@@ -1,4 +1,4 @@
-const Country = require('../models/countryModel');
+import Country from '../models/countryModel.js';
 
 // @desc    Get all countries
 // @route   GET /api/countries
@@ -73,4 +73,4 @@ const updateCountry = async (req, res) => {
   }
 };
 
-module.exports = { getCountries, getCountryById, createCountry, updateCountry };
+export { getCountries, getCountryById, createCountry, updateCountry };

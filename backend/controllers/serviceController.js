@@ -1,4 +1,4 @@
-const Service = require('../models/serviceModel');
+import Service from '../models/Service.js';
 
 // @desc    Get all services
 // @route   GET /api/services
@@ -80,7 +80,7 @@ const deleteService = async (req, res) => {
   }
 };
 
-module.exports = {
+export{
   getServices,
   getServiceById,
   createService,

@@ -1,4 +1,4 @@
-const Testimonial = require('../models/testimonialModel');
+import Testimonial from '../models/testimonialModel.js';
 
 // @desc    Get all testimonials
 // @route   GET /api/testimonials
@@ -82,7 +82,7 @@ const deleteTestimonial = async (req, res) => {
   }
 };
 
-module.exports = { 
+export{ 
   getTestimonials, 
   getTestimonialById, 
   createTestimonial, 

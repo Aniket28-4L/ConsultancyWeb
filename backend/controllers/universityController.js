@@ -1,4 +1,4 @@
-const University = require('../models/universityModel');
+import University from '../models/universityModel.js';
 
 // @desc    Get all universities
 // @route   GET /api/universities
@@ -75,4 +75,4 @@ const updateUniversity = async (req, res) => {
   }
 };
 
-module.exports = { getUniversities, getUniversityById, createUniversity, updateUniversity };
+export { getUniversities, getUniversityById, createUniversity, updateUniversity };

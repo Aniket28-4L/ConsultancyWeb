@@ -1,4 +1,4 @@
-const Process = require('../models/processModel');
+import Process from '../models/Process.js';
 
 // @desc    Get all processes
 // @route   GET /api/processes
@@ -82,7 +82,7 @@ const deleteProcess = async (req, res) => {
   }
 };
 
-module.exports = {
+export {
   getProcesses,
   getProcessById,
   createProcess,
